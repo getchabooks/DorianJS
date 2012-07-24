@@ -1,0 +1,40 @@
+@import "compass";
+
+#modal {
+  @include border-radius(10px);
+  background: #111;
+  border: 5px solid white;
+  color: white;
+  padding: 10px;
+  position: relative;
+  margin-top: 40px;
+  text-align: left;
+  width: 500px;
+}
+
+#modal-shade {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#modal-cancel {
+  @include border-radius(40px);
+  background: black;
+  border: 5px solid white;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  width: 40px;
+
+  &:after {
+    content: '\00d7';
+    font-size: 40px;
+    font-weight: bold;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    top: -5px;
+    width: 40px;
+  }
+}
